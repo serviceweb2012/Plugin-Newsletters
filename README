@@ -1,0 +1,6 @@
+Plugin para criação de estrutura de Newsletters em sites.
+
+executar : ruby script/generate newsletter no projeto
+
+na view chamar o metodo : gera_newsletter
+

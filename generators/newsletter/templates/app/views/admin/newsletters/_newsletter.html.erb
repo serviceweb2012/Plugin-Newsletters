@@ -1,0 +1,15 @@
+<% table_form_model(@newsletter) do |c|%>
+  <%= field_for_form(f, c, :email) %>
+  <tr>
+    <td>
+      <div class="field">
+        <span>
+          <label for="product_financing">
+            <%= f.check_box(:situation) %>&nbsp;&nbsp;Situação
+          </label>
+        </span>
+      </div>
+    </td>
+  </tr>
+  <%= submit_for_form(f, btnName, :tabindex => "3") %>
+<% end %>

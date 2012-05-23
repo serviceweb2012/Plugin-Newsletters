@@ -1,0 +1,5 @@
+<% mapa(:newsletter, :action => :new) %>
+<%=  error_messages_for :newsletter %>
+<%- form_for(:newsletter, :url => admin_newsletters_path, :html => {:id => "form_search", :name => "form_search" }) do |f| -%>
+  <%= render :partial => @newsletter, :locals => { :btnName => "cadastrar", :f => f } %>
+<%- end -%>
